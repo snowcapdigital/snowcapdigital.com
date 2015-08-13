@@ -1,0 +1,24 @@
+{
+    "images": {
+        "cwd": "./src/img/",
+        "src": [ "**/*" ],
+        "expand": true,
+        "dest": "build/img/"
+    },
+    "vendor": {
+        "files": [
+            {
+                "expand": true,
+                "cwd": "./node_modules/font-awesome/fonts/",
+                "src": [ "*.*" ],
+                "dest": "./build/vendor/font-awesome/fonts"
+            },
+            {
+                "expand": true,
+                "cwd": "./node_modules/font-awesome/scss/",
+                "src": [ "**/*.*" ],
+                "dest": "./build/vendor/font-awesome/scss"
+            }
+        ]
+    }
+}
