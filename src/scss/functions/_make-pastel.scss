@@ -1,0 +1,6 @@
+@function make-pastel( $color ){
+    $pastel-sat: -30;
+    $pastel-lig: 30;
+
+   @return adjust-color( $color, $saturation: $pastel-sat, $lightness: $pastel-lig );
+}

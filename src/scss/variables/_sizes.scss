@@ -1,0 +1,70 @@
+// Common
+$standard-border:           0.1em;
+$standard-border-radius:    0.25em;
+$standard-padding:          0.25em;
+$reading-line-height:       1.5em;
+$reading-font-size:         1.3em;
+
+// Page
+$fullsize:              1024px;
+$midsize:               780px;
+$smallsize:             480px;
+$mobile:                320px;
+
+// Headers
+$header-height:         50px;
+$crate-header-height:   1.5em;
+
+// Footers
+$footer-height:         40px;
+
+// Navigation
+$menu-width:                220px;
+$menu-width-collapsed:      70px;
+$compressed-menu-width:     140px;
+$link-left-pad:             25px;
+$compressed-link-left-pad:  10px;
+
+// Containers
+$breathing-room:        20px;
+$panel-padding:         1em;
+$inter-container:       1em;
+$article-reading-width: 50em;
+
+// Links
+$link-underline-width:  1px;
+$link-underline-offset: 0px;
+
+// Form Elements
+$label-line-height:     1.4em;
+$selects-in-icon-rows:  -0.4em;
+$input-width:           100%;
+$field-max:             16.8em;
+$input-padding:         0.21em;
+$input-lmarg:           0.75em;
+$input-vmarg:           0.25em;
+$input-border:          $standard-border;
+$input-inset-sizes: (
+"horiz":    0,
+"vert":     0,
+"blur":     0.4em,
+"spread":   0.3em
+);
+// form control groups
+$icon-left:         0.2em;
+$icon-top:          0.5em;
+$icon-padding:      0.35em;
+
+// Option Bar
+$option-bar-height:     8em;
+
+$logo-height:           $header-height;
+
+$content-padding:       10px;
+$nav-height:            42px;
+$nav-margin-vertical:   ($header-height - $nav-height)/2;
+$nav-margin-horizontal: $content-padding;
+
+$line-height:           1em;
+$font-size:             14px;
+$compressed-font-size:  10px;

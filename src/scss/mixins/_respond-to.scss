@@ -1,0 +1,20 @@
+@mixin respond-to( $media ){
+    @if $media == mobile{
+        @media only screen and (max-width: $mobile-breakpoint){ @content; }
+    }
+    @elseif $media == small{
+        @media only screen and (max-width: $small-breakpoint){ @content; }
+    }
+    @else if $media == small-only{
+        @media only screen and (min-width: ( $mobile-breakpoint + 1) ) and (max-width: $small-breakpoint){ @content; }
+    }
+    @else if $media == medium{
+        @media only screen and (max-width: $medium-breakpoint){ @content; }
+    }
+    @else if $media == medium-only{
+        @media only screen and (min-width: ( $small-breakpoint + 1) ) and (max-width: $medium-breakpoint){ @content; }
+    }
+    @else if $media == wide{
+        @media only screen and (min-width: ( $medium-breakpoint + 1 )) { @content; }
+    }
+}

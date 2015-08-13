@@ -1,0 +1,13 @@
+.notice{
+    margin-bottom: 0.8em;
+    padding: 0.5em 1em;
+
+    &.error{
+        background-color: $error;
+
+        color: $standard;
+
+        @include border-radius( 0.5em );
+        border: 1px solid make-dark( $error );
+    }
+}

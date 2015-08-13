@@ -1,0 +1,35 @@
+figure{
+    margin-top: ( 0.5 * $breathing-room );
+    margin-bottom: ( 0.5 * $breathing-room );
+    
+    &.fr{
+        margin-left: $breathing-room;
+    }
+    
+    &.fl{
+        margin-right: $breathing-room;
+    }
+    
+    img{
+        width: 100%;
+        
+        border: (4 * $standard-border) solid $color-struts;
+        border-radius: $standard-border-radius $standard-border-radius 0 0;
+    }
+    
+    figcaption{
+        @extend .tc;
+        
+        margin-top: -$standard-border;
+        
+        border: (4 * $standard-border) solid $color-struts;
+        border-radius: 0 0 $standard-border-radius $standard-border-radius;
+        
+        padding: ($breathing-room / 2);
+        
+        background-color: $color-struts;
+        
+        line-height: $reading-line-height;
+        font-size: ($reading-font-size / 2);
+    }
+}

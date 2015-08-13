@@ -1,0 +1,29 @@
+a[href^="mailto:"]{
+    @include underline( $link-color );
+}
+
+article .body a,
+a.underline{
+    &[data-href]{
+        cursor: pointer;
+    }
+
+    @include underline( $link-color );
+    @include transition( color 350ms ease );
+
+    color: $link-color;
+    text-shadow:
+        -1px -1px 0 $standard-background,
+        1px -1px 0 $standard-background,
+        -1px 1px 0 $standard-background,
+        1px 1px 0 $standard-background;
+
+    position: relative;
+
+    &:hover,
+    &:focus{
+        @include underline( $link-color-active );
+
+        color: $link-color-active
+    }
+}

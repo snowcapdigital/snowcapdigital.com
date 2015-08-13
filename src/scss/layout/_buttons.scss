@@ -1,0 +1,35 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+a.btn{
+    cursor: pointer;
+}
+
+button{
+    border: none;
+    @include border-radius( 0.25em );
+    @include button( $info );
+
+    padding: 0.5em 1em;
+    margin: 0.1em;
+
+    color: $text;
+    text-shadow: 0 1px 1px $dark-text;
+
+    &[type="submit"],
+    &.confirm{
+        @include button( $okay );
+    }
+
+    &.error{
+        @include button( $error );
+    }
+}
+
+a.btn{
+    @extend button;
+    @extend .iblock;
+
+    text-decoration: none;
+}

@@ -1,0 +1,11 @@
+////
+/// @author Tom Randolph
+////
+@mixin button( $color ){
+    background-color: $color;
+
+    &:active,
+    &:focus{
+        box-shadow: inset 2px 2px 3px make-dark( $color );
+    }
+}

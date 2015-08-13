@@ -1,0 +1,28 @@
+body > header{
+    @extend .clear;
+    @extend .tc;
+
+    font-size: 2.5em;
+    color: $standard;
+
+    padding: 0.25em;
+
+    background-color: #142156;
+
+    img{
+        width: 6em;
+    }
+}
+
+section{
+    @for $i from 1 through 6 {
+        > h#{$i} {
+            @extend .tl;
+
+            margin-bottom: 1em;
+            padding: 0.5em;
+
+            border-bottom: $standard-border solid $color-struts;
+        }
+    }
+}
