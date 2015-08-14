@@ -3,11 +3,11 @@ body > header{
     @extend .tc;
 
     font-size: 2.5em;
-    color: $standard;
+    color: $text-on-dark;
 
     padding: 0.25em;
 
-    background-color: #142156;
+    background-color: $theme-dark;
 
     img{
         width: 6em;

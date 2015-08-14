@@ -1,4 +1,9 @@
 body{
     width: 100%;
     min-width: $mobile;
+
+    #body{
+        max-width: 100%;
+        width: 80em;
+    }
 }
