@@ -1,0 +1,6 @@
+{
+    "sass": {
+        "files": [ "src/scss/**/*.scss" ],
+        "tasks": [ "style" ]
+    }
+}
