@@ -1,6 +1,10 @@
 .grid {
     margin: 0 0 $grid-padding 0;
 
+    &.no-marg{
+        margin: 0;
+    }
+
     &:after {
         @extend .clear;
     }
@@ -8,50 +12,37 @@
 
 [class*='col-'] {
     @extend .fl;
-    padding-right: $grid-padding;
-    .grid &:last-of-type {
-        padding-right: 0;
+    @extend .tc;
+
+    padding-right: 0;
+
+    @include respond-to( small ){
+        text-align: left;
+
+        padding-right: $grid-padding;
+
+        .grid &:last-of-type {
+            padding-right: 0;
+        }
     }
 }
 
 @for $i from 1 through 10{
     .col-#{$i}-10{
-        width: percentage( $i / 10 );
+        width: 100%;
 
-        &:not(.step){
-            @include respond-to( medium-only ){
-                @if $i > 5{
-                    width: 100%;
-                }
-                @else{
-                    width: 50%;
-                }
-            }
-
-            @include respond-to( small ){
-                width: 100%;
-            }
+        @include respond-to( small ){
+            width: percentage( $i / 10 );
         }
     }
 }
 
 @for $i from 1 through $columns{
     .col-#{$i}-#{$columns}{
-        width: percentage( $i / $columns );
+        width: 100%;
 
-        &:not(.step){
-            @include respond-to( medium-only ){
-                @if $i > 6{
-                    width: 100%;
-                }
-                @else{
-                    width: 50%;
-                }
-            }
-
-            @include respond-to( small ){
-                width: 100%;
-            }
+        @include respond-to( small ){
+            width: percentage( $i / $columns );
         }
     }
 }

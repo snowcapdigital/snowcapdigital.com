@@ -24,10 +24,11 @@ $link-underline-color:  $text;
 $link-color:            $text;
 $link-color-active:     $button-active-text;
 
-$subtle:            darken( $standard, 10 );
-$subtle-error:      #FFCFCF;
-$dark:              darken( $standard, 20 );
-$theme-dark:        #404040;
+$subtle:                    darken( $standard, 10 );
+$subtle-error:              #FFCFCF;
+$dark:                      darken( $standard, 20 );
+$theme-dark:                #404040;
+$transparent-theme-dark:    rgba( $theme-dark, 0.4 );
 
 $error:     #F54C4C;
 $okay:      #90EE90;

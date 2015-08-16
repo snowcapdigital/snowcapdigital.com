@@ -1,3 +1,19 @@
 section + section{
     margin-top: $breathing-room;
 }
+
+section{
+    &.slider{
+        background-color: make-pastel( $theme-dark );
+
+        li{
+            height: 30em;
+
+            &:nth-child( even ){
+                background-color: $theme-dark;
+
+                color: $standard;
+            }
+        }
+    }
+}
