@@ -149,10 +149,6 @@ body{
 
     line-height: $line-height;
     font-size: $font-size;
-
-    @include respond-to( small ){
-        font-size: $compressed-font-size;
-    }
 }
 
 // Remove dotted outlines
