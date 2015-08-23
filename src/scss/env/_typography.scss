@@ -3,16 +3,13 @@
     font-family: Arial, "Open Sans", sans-serif;
 }
 
-@font-face {
-     font-family: 'StateFaceRegular';
-     src: url('/build/vendor/stateface/stateface-regular-webfont.eot');
-     src: url('/build/vendor/stateface/stateface-regular-webfont.eot?#iefix') format('embedded-opentype'),
-          url('/build/vendor/stateface/stateface-regular-webfont.woff') format('woff'),
-          url('/build/vendor/stateface/stateface-regular-webfont.ttf') format('truetype'),
-          url('/build/vendor/stateface/stateface-regular-webfont.svg#StateFaceRegular') format('svg');
-     font-weight: normal;
-     font-style: normal;
- }
+p{
+    line-height: $reading-line-height;
+
+    @include respond-to( small ){
+        line-height: ( $reading-line-height * 1.5 );
+    };
+}
 
 h1{
     font-size: 3em;

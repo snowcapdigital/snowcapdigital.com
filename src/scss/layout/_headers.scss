@@ -8,7 +8,7 @@ body > header{
     margin-bottom: 0;
     position: block;
 
-    background-color: $theme-dark;
+    background-color: $primary;
 
     height: 5em;
 
@@ -24,8 +24,8 @@ body > header{
     }
 
     @include respond-to( small ){
-        background-color: $transparent-theme-dark;
-
+        background-color: rgba( $primary, 0.4 );
+        
         height: 7em;
 
         position: absolute;

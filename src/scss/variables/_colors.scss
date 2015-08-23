@@ -27,11 +27,16 @@ $link-color-active:     $button-active-text;
 $subtle:                    darken( $standard, 10 );
 $subtle-error:              #FFCFCF;
 $dark:                      darken( $standard, 20 );
-$theme-dark:                #404040;
-$transparent-theme-dark:    rgba( $theme-dark, 0.4 );
 
 $error:     #F54C4C;
 $okay:      #90EE90;
 $warning:   #FFEAA8;
 $info:      #57B7E2;
 $clean:     #FFEAA8;
+
+// Theme Colors
+$primary:           rgba( 83, 0, 0, 1.0 );
+$secondary:         rgba( 128, 0, 0, 1.0 );
+$primary-blank:     rgba( 255, 255, 255, 1.0 ); // discrete from $standard to allow theme changes
+$primary-dark:      rgba( 145, 146, 143, 1.0 );
+$secondary-dark:    rgba( 51, 51, 51, 1.0 );

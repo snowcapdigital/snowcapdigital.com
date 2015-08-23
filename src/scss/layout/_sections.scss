@@ -4,15 +4,19 @@ section + section{
 
 section{
     &.slider{
-        background-color: make-pastel( $theme-dark );
+        background-color: $primary-dark;
+
+        color: $primary;
 
         li{
             height: 30em;
 
-            &:nth-child( even ){
-                background-color: $theme-dark;
+            padding: $standard-padding;
 
-                color: $standard;
+            &:nth-child( even ){
+                background-color: $secondary-dark;
+
+                color: $primary-dark;
             }
         }
     }
