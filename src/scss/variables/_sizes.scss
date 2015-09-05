@@ -12,7 +12,8 @@ $smallsize:             480px;
 $mobile:                320px;
 
 // Headers
-$header-height:         50px;
+$header-height:         5em;
+$larger-header-height:  7em;
 $crate-header-height:   1.5em;
 
 // Footers
@@ -57,13 +58,6 @@ $icon-padding:      0.35em;
 
 // Option Bar
 $option-bar-height:     8em;
-
-$logo-height:           $header-height;
-
-$content-padding:       10px;
-$nav-height:            42px;
-$nav-margin-vertical:   ($header-height - $nav-height)/2;
-$nav-margin-horizontal: $content-padding;
 
 $line-height:           1em;
 $font-size:             14px;

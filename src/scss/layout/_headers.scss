@@ -4,13 +4,13 @@ body > header{
 
     color: $text-on-dark;
 
-    padding: 0.25em;
+    padding: $standard-padding;
     margin-bottom: 0;
     position: block;
 
     background-color: $primary;
 
-    height: 5em;
+    height: $header-height;
 
     .logo{
         @extend .fl;
@@ -23,15 +23,44 @@ body > header{
         }
     }
 
+    nav.primary{
+        @extend .fr;
+        @extend .vm;
+
+        height: $header-height - (2 * $standard-padding);
+        line-height: $header-height - (2 * $standard-padding);
+
+        span.small{
+            @extend .hide;
+        }
+
+        a.btn{
+            line-height: 2.25em;
+        }
+    }
+
     @include respond-to( small ){
         background-color: rgba( $primary, 0.4 );
-        
-        height: 7em;
+
+        height: $larger-header-height;
 
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
+
+        nav.primary{
+            height: $larger-header-height - (2 * $standard-padding);
+            line-height: $larger-header-height - (2 * $standard-padding);
+
+            span.mobile{
+                display: none;
+            }
+
+            span.small{
+                display: inline;
+            }
+        }
     }
 }
 

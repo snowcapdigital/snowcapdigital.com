@@ -1,4 +1,16 @@
 body > footer{
-    font-size: 2.5em;
-    height: 1em;
+    @extend .tc;
+
+    font-size: 1em;
+    color: $primary-dark;
+
+    height: 8em;
+
+    background-color: $secondary;
+
+    #social-buttons{
+        margin-top: 1em;
+
+        font-size: 2em;
+    }
 }
