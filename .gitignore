@@ -1,4 +1,5 @@
 node_modules/**/*
+apps/**/*
 build/**/*
 .DS_Store
 google*.html
