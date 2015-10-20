@@ -1,70 +1,25 @@
-body > header{
-    @extend .clear;
-    @extend .tc;
-
-    color: $text-on-dark;
-
-    padding: $standard-padding;
-    margin-bottom: 0;
-    position: block;
-
-    background-color: $primary;
-
-    height: $header-height;
-
-    .logo{
-        @extend .fl;
-
-        height: 100%;
-
-        img{
-            margin: -20% 0 0 -20%;
-            height: 200%;
-        }
-    }
-
-    nav.primary{
-        @extend .fr;
-        @extend .vm;
-
-        height: $header-height - (2 * $standard-padding);
-        line-height: $header-height - (2 * $standard-padding);
-
-        span.small{
-            @extend .hide;
-        }
-
-        a.btn{
-            line-height: 2.25em;
-        }
-    }
-
-    @include respond-to( small ){
-        background-color: rgba( $primary, 0.4 );
-
-        height: $larger-header-height;
-
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-
-        nav.primary{
-            height: $larger-header-height - (2 * $standard-padding);
-            line-height: $larger-header-height - (2 * $standard-padding);
-
-            span.mobile{
-                display: none;
-            }
-
-            span.small{
-                display: inline;
-            }
-        }
-    }
-}
-
 section{
+    > header{
+        @extend .clear;
+        @extend .tc;
+
+        color: $text-on-dark;
+
+        padding: 0.25 * $standard-padding;
+        margin-bottom: 0;
+        position: block;
+
+        height: $header-height;
+
+        border-bottom: $standard-border solid $secondary;
+
+        #logo{
+            @extend .fl;
+
+            height: $header-height - ( 0.5 * $standard-padding );
+        }
+    }
+
     @for $i from 1 through 6 {
         > h#{$i} {
             @extend .tl;

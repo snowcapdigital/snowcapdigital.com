@@ -1,15 +1,17 @@
-body > footer{
+section.content > footer{
     @extend .tc;
 
     font-size: 1em;
-    color: $primary-dark;
+    color: $secondary-dark;
 
     height: 8em;
 
-    background-color: $secondary;
+    border-top: $standard-border solid $secondary;
 
     #social-buttons{
         margin-top: 1em;
+
+        color: $primary;
 
         font-size: 2em;
     }
