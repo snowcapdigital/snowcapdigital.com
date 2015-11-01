@@ -1,9 +1,0 @@
-ul.chosen-choices{
-    @include border-radius( $input-vmarg );
-    border: $input-border solid $struts;
-}
-
-.chosen-container,
-.chosen-container-multi{
-    margin-left: $input-lmarg;
-}
