@@ -90,9 +90,9 @@
         </div>
         <div class="splash-container">
             <div class="splash">
-                <h1 class="splash-head">Web Applications for People</h1>
+                <h1 class="splash-head">Web Applications for <span class="rotator" id="who-for">People</span></h1>
                 <p class="splash-subhead">
-                    Snowcap Digital builds software that's powerful and pleasurable for individuals.
+                    Snowcap Digital builds software that's powerful and pleasurable for <span class="rotator" id="who-for-more">individuals</span>.
                 </p>
                 <p>
                     <a href="mailto:info@snowcapdigital.com" class="pure-button pure-button-primary">Contact Us Now</a>
@@ -199,5 +199,45 @@
                 </div>
             </div>
         </div>
+        <script>
+            (function(){
+                var rotators = document.querySelectorAll( '.rotator' );
+                var slugs = {
+                    'who-for': [
+                        'people',
+                        'businesses',
+                        'getting stuff done',
+                        'happiness',
+                        'efficiency'
+                    ],
+                    'who-for-more': [
+                        'individuals',
+                        'humans',
+                        'jetpack enthusiasts',
+                        'dog-lovers',
+                        'cat-lovers',
+                        'water-drinkers',
+                        'hair-do havers',
+                        'hair-do have-nots',
+                        'presidents',
+                        'garbage collectors',
+                        'pilots',
+                        'train engineers',
+                        'editors',
+                        'mountaineers'
+                    ]
+                };
+                var i;
+
+                setInterval( function(){
+                    for( i = 0; i < rotators.length; i++ ){
+                        var rotator = rotators[ i ];
+                        var id = rotator.id;
+
+                        rotator.textContent = slugs[ id ][ Math.floor( Math.random() * slugs[ id ].length ) ];
+                    }
+                }, 3000 );
+            })()
+        </script>
     </body>
 </html>
