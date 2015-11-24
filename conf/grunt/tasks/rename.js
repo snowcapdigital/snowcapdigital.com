@@ -5,7 +5,7 @@ module.exports = function( grunt ){
 
     grunt.registerTask( 'rename', 'Rename some files', function(){
         var buildScss = grunt.file.expandMapping(
-            [ '**/pure.css' ],
+            [ 'build/vendor/**/*.css' ],
             './',
             {
                 'cwd': './',

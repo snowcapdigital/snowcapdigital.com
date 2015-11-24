@@ -1,8 +1,5 @@
 .footer{
-    // @extend .tc;
-    //
-    // font-size: 1em;
-    // color: $secondary-dark;
+    color: $text;
 
     height: 8em;
 
@@ -11,7 +8,7 @@
     #social-buttons{
         margin-top: 1em;
 
-        color: $primary;
+        color: scale-color( $primary, $lightness: 50% );
 
         font-size: 2em;
     }

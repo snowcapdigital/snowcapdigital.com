@@ -22,7 +22,7 @@
             {
                 "expand": true,
                 "cwd": "./node_modules/purecss/build/",
-                "src": [ "pure.css" ],
+                "src": [ "pure.css", "grids-responsive*.css" ],
                 "dest": "./build/vendor/purecss/"
             }
         ]
