@@ -18,6 +18,12 @@
                 "cwd": "./node_modules/font-awesome/scss/",
                 "src": [ "**/*.*" ],
                 "dest": "./build/vendor/font-awesome/scss"
+            },
+            {
+                "expand": true,
+                "cwd": "./node_modules/purecss/build/",
+                "src": [ "pure.css" ],
+                "dest": "./build/vendor/purecss/"
             }
         ]
     }

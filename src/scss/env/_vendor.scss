@@ -1,2 +1,5 @@
 @import "../../../build/vendor/font-awesome/scss/font-awesome.scss";
-//@import "../../vendor/highlightjs/styles/monokai_sublime.scss";
+@import "../../../build/vendor/purecss/pure.scss";
+
+/* Get the template override */
+@import "vendor/purecss/splash-layout.scss";

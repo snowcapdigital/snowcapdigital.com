@@ -3,3 +3,4 @@ apps/**/*
 build/**/*
 .DS_Store
 google*.html
+.ftpconfig

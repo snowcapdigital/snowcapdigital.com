@@ -1,22 +1,12 @@
-$text:          #232323;
-$text-on-dark:  #FEFEFE;
-$standard:      #FFFFFF;
-
-$struts:            #CCCCCC;
-$color-struts:      #CCCCFF;
-
-$dark:               darken( $standard, 20 );
-$content-background: #F0F0F0;
-
-$error:     #F54C4C;
-$okay:      #90EE90;
-$warning:   #FFEAA8;
-$info:      #57B7E2;
-$clean:     #FFEAA8;
-
 // Theme Colors
-$primary:           rgba( 83, 0, 0, 1.0 );
-$secondary:         rgba( 128, 0, 0, 1.0 );
-$primary-blank:     rgba( 255, 255, 255, 1.0 ); // discrete from $standard to allow theme changes
+$primary:           rgba( 128, 0, 0, 1.0 );
+$secondary:         rgba( 83, 0, 0, 1.0 );
+$primary-blank:     rgba( 255, 255, 255, 1.0 ); // discrete from $text/$bg to allow theme changes
 $primary-dark:      rgba( 145, 146, 143, 1.0 );
 $secondary-dark:    rgba( 51, 51, 51, 1.0 );
+
+$text:  #FFFFFF;
+$bg:    #FFFFFF;
+
+$fill:  #3b3b3b;
+$introductory-text: $primary;
