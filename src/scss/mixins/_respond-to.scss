@@ -1,14 +1,8 @@
 @mixin respond-to( $media ){
-    @if $media == mobile{
-        @media only screen and (max-width: ( $mobile-breakpoint - 1 ) ){ @content; }
+    @if $media == tablet{
+        @media only screen and (min-width: $tablet-breakpoint ){ @content; }
     }
-    @elseif $media == small{
-        @media only screen and (min-width: $mobile-breakpoint ){ @content; }
-    }
-    @else if $media == medium{
-        @media only screen and (min-width: $small-breakpoint){ @content; }
-    }
-    @else if $media == wide{
-        @media only screen and (min-width: $medium-breakpoint){ @content; }
+    @elseif $media == desktop{
+        @media only screen and (min-width: $desktop-breakpoint ){ @content; }
     }
 }
