@@ -35,32 +35,18 @@
     margin-bottom: 1em;
 }
 
-/*
- * -- PURE BUTTON STYLES --
- * I want my pure-button elements to look a little different
- */
-// .pure-button {
-//     background-color: #1f8dd6;
-//     color: white;
-//     padding: 0.5em 2em;
-//     border-radius: 5px;
-// }
-//
-// a.pure-button-primary {
-//     background: white;
-//     color: #1f8dd6;
-//     border-radius: 5px;
-//     font-size: 120%;
-// }
-
-/*
- * -- CONTENT STYLES --
- * This represents the content area (everything below the blue section)
- */
 .content-wrapper{
     margin-top: 7.7em;
 
     color: $secondary-dark;
+}
+
+.header + .content-wrapper{
+    margin-top: 11.3em;
+
+    @include respond-to( tablet ){
+        margin-top: 7.7em;
+    }
 }
 
 .splash-container{
@@ -124,12 +110,13 @@
 
     /* We can align the menu header to the left, but float the
     menu items to the right. */
-    .home-menu {
+    .main-menu {
         text-align: left;
-    }
-        .home-menu ul {
+
+        ul{
             float: right;
         }
+    }
 
     /* We remove the border-separator assigned to .l-box-lrg */
     .l-box-lrg {

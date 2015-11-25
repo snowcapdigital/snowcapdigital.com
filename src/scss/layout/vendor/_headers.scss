@@ -1,5 +1,5 @@
 .header{
-    .home-menu{
+    .main-menu{
         padding: 0.5em;
         text-align: center;
         box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
@@ -24,17 +24,26 @@
         }
 
         .pure-menu-heading{
-            @extend .fl;
+            margin: auto;
 
             color: $text;
             font-weight: 400;
             font-size: 120%;
+
+            @include respond-to( tablet ){
+                float: left;
+            }
         }
 
         .pure-menu-list{
-            @extend .fr;
+            margin: 0.5em auto;
+            display: block;
 
-            margin: 2em auto;
+            @include respond-to( tablet ){
+                float: right;
+                margin: 2em auto;
+                display: inline-block;
+            }
 
             .pure-menu-selected a{
                 color: $text;
