@@ -43,11 +43,11 @@
             line-height: 1em;
 
             @include respond-to( tablet ){
-                font-size: 250%;
+                font-size: 200%;
             }
 
             @include respond-to( desktop ){
-                font-size: 300%;
+                font-size: 250%;
             }
         }
 
