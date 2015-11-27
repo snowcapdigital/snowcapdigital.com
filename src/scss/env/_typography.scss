@@ -3,14 +3,6 @@
     font-family: Arial, "Open Sans", sans-serif;
 }
 
-p{
-    line-height: $reading-line-height;
-
-    @include respond-to( small ){
-        line-height: ( $reading-line-height * 1.5 );
-    };
-}
-
 h1{
     font-size: 3em;
 }
@@ -41,6 +33,18 @@ sup{
 
 code{
     font-family: monospace;
+}
+
+.line-normal{
+    line-height: $reading-line-height;
+}
+
+.line-extra{
+    line-height: ( 1.3 * $reading-line-height );
+}
+
+.line-fat{
+    line-height: ( 1.7 * $reading-line-height );
 }
 
 .fw{
