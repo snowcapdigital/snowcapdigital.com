@@ -5,4 +5,7 @@
     @elseif $media == desktop{
         @media only screen and (min-width: $desktop-breakpoint ){ @content; }
     }
+    @elseif $media == tall{
+        @media only screen and (min-height: $tall-breakpoint ){ @content; }
+    }
 }

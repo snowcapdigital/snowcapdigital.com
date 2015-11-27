@@ -36,16 +36,18 @@
 }
 
 .content-wrapper{
-    margin-top: 7.7em;
+    margin-top: 6.7em;
+
+    min-width: $minimum-width;
 
     color: $secondary-dark;
 }
 
 .header + .content-wrapper{
-    margin-top: 11.3em;
+    margin-top: 10.3em;
 
     @include respond-to( tablet ){
-        margin-top: 7.7em;
+        margin-top: 6.7em;
     }
 }
 
@@ -53,7 +55,7 @@
     & + .content-wrapper {
         /* These styles are required for the "scroll-over" effect */
         position: absolute;
-        top: 64%;
+        top: 54%;
         width: 100%;
         min-height: 12%;
         z-index: 2;
