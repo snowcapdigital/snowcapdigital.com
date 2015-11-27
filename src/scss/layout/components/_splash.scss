@@ -28,6 +28,10 @@
         text-align: center;
         text-transform: uppercase;
 
+        @include respond-to( "tall and tablet" ){
+            top: 25px;
+        }
+
         @include respond-to( desktop ){
             width: 50%;
             height: 50%;
@@ -43,7 +47,7 @@
             border-radius: 5px;
             line-height: 1em;
 
-            @include respond-to( tall ){
+            @include respond-to( "tall and tablet" ){
                 font-size: 250%;
             }
         }
