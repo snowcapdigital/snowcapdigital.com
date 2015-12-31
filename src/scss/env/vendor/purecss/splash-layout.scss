@@ -55,6 +55,15 @@
 .ribbon {
     background: $fill;
     color: #aaa;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{
+        color: scale-color( $primary, $lightness: 50% );
+    }
 }
 
 /* This is the class used for the footer */
