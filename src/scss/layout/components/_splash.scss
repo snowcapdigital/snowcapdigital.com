@@ -1,16 +1,7 @@
 .splash-container{
     background-color: $fill;
-    z-index: 1;
     overflow: hidden;
     min-width: $minimum-width;
-    min-height: 410px;
-    max-height: 550px;
-    /* The following styles are required for the "scroll-over" effect */
-    width: 100%;
-    height: 55%;
-    top: 0;
-    left: 0;
-    position: fixed !important;
 
     background-image: url('/build/img/mountains-compressed.jpg');
     background-position: center;
@@ -19,18 +10,11 @@
     background-blend-mode: darken;
 
     .splash {
-        /* absolute center .splash within .splash-container */
         width: 80%;
         height: 45%;
         margin: auto;
-        position: absolute;
-        top: 150px; left: 0; bottom: 0; right: 0;
         text-align: center;
         text-transform: uppercase;
-
-        @include respond-to( "tall and tablet" ){
-            top: 25px;
-        }
 
         @include respond-to( desktop ){
             width: 50%;
@@ -50,6 +34,10 @@
             @include respond-to( "tall and tablet" ){
                 font-size: 250%;
             }
+        }
+
+        .content{
+            padding: 1em;
         }
 
         .splash-subhead {
